@@ -2,9 +2,9 @@
   "name": "zelda30tribute",
   "version": "0.0.1",
   "description": "Fork of zelda30tribute",
-  "main": "nodeserver.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node nodeserver.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/amielperez/zelda30tribute/issues"
   },
-  "homepage": "https://github.com/amielperez/zelda30tribute#readme"
+  "homepage": "https://github.com/amielperez/zelda30tribute#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
