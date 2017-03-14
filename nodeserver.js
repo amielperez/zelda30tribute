@@ -3,6 +3,7 @@ var http = require("http");
 var path = require("path");
 var url = require("url");
 var fs = require("fs");
+var PORT = process.env.PORT || 8080;
 
 http.createServer(function(request,response){
 	var my_path = url.parse(request.url).pathname;
@@ -41,5 +42,5 @@ http.createServer(function(request,response){
 			});
 		}
 	});
-}).listen(9378);
-sys.puts("Server Running on 9378");			
+}).listen(PORT);
+sys.puts("Server Running on " + PORT);			
